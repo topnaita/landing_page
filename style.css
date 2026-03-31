@@ -4,7 +4,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   margin: 0;
-  color: white;
+  /* color: white; */
 }
 
 ul {
@@ -14,12 +14,19 @@ ul {
 a {
   text-decoration: none;
   color: gray;
-  margin: 5px;
+  margin: 10px;
+  
 }
+
 
 img {
   width: 500px;
   height: 225px;
+}
+header{
+  font: 24px;
+  color:#f9faf8 ;
+  margin-left: -18px;
 }
 /* Start header container  */
 
@@ -27,32 +34,35 @@ img {
   display: flex;
   background-color: #1f2937;
   flex-direction: column;
-  align-content: space-between;
-  /* justify-content: space-around; */
-  /* align-items: stretch; */
 }
 .containerA {
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
 }
 
 .containerB {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-bottom: 25px;
   /* gap: 10px; */
 }
 #texttop {
   font-weight: 900;
   font-size: 48px;
-  color: f9faf8;
+  
+  margin-bottom: -10px;
 }
 .Fulltext {
   display: flex;
   text-align: left;
   width: 400px;
+  color:#e5e7fb
+
+  /* align-items: center; */
+  justify-content: center;
+
   /* height: 300px; */
   flex-direction: column;
   /* align-items: start; */
@@ -64,4 +74,25 @@ img {
   background: #4d88ff;
   padding: 12px 25px;
 }
+.image {
+  display: flex;
+  justify-content: space-around;
+  margin-left: -30px;
+}
+p{
+  color: #f9faf8;
+}
 /* End header container */
+
+.imagescontainer {
+  display: flex;
+  /* background-color: #3882f6; */
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.textimages{
+  display:flex ;
+  color:#1f2937;
+  font-weight: 900;
+  justify-content: center;
+}
