@@ -15,17 +15,16 @@ a {
   text-decoration: none;
   color: gray;
   margin: 10px;
-  
 }
 
-
-img {
+.headerimage {
   width: 500px;
   height: 225px;
+  flex-shrink: 0;
 }
-header{
+header {
   font: 24px;
-  color:#f9faf8 ;
+  color: #f9faf8;
   margin-left: -18px;
 }
 /* Start header container  */
@@ -35,13 +34,13 @@ header{
   background-color: #1f2937;
   flex-direction: column;
 }
-.containerA {
+.links {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.containerB {
+.containertex {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -51,20 +50,21 @@ header{
 #texttop {
   font-weight: 900;
   font-size: 48px;
-  
+  color: #f9faf8;
+
   margin-bottom: -10px;
 }
-.Fulltext {
+.headerdecription {
   display: flex;
   text-align: left;
   width: 400px;
-  color:#e5e7fb
-
+  color: #e5e7fb;
+  flex-direction: column;
   /* align-items: center; */
   justify-content: center;
 
   /* height: 300px; */
-  flex-direction: column;
+
   /* align-items: start; */
 }
 .button button {
@@ -74,25 +74,79 @@ header{
   background: #4d88ff;
   padding: 12px 25px;
 }
-.image {
-  display: flex;
-  justify-content: space-around;
-  margin-left: -30px;
-}
-p{
+
+#textbelow {
   color: #f9faf8;
 }
-/* End header container */
 
-.imagescontainer {
+/* END HEADER CONTAINER A */
+
+/* CONTAINER B */
+.containerB {
   display: flex;
-  /* background-color: #3882f6; */
+  padding: 50px 0 100px 0;
   flex-direction: column;
-  flex-wrap: wrap;
 }
-.textimages{
-  display:flex ;
-  color:#1f2937;
-  font-weight: 900;
+
+/* card section */
+
+.card {
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  padding: 3px;
+  background-color: #3883f6;
+}
+.rowimages {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+/* End Card section*/
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: 900;
+  font-size: 36px;
+  margin-top: -20px;
+}
+/* All the cards are in this section */
+.cardscontainer {
+  display: flex;
   justify-content: center;
+}
+.textrowimages {
+  text-align: center;
+  color: gray;
+}
+/*  END CONTAINER B */
+
+/* START CONTAINER C */
+.containerC {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  justify-content: center;
+  padding: 50px 0 100px 0;
+  align-items: center;
+}
+.textC {
+  display: flex;
+  width: 800px;
+  color: gray;
+  font-size: 36px;
+  font: 300px;
+}
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: -30px;
+  font-weight: bold;
 }
